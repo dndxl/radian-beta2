@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Radian - Registrasi</title>
+    <link rel="stylesheet" href="css/output.css">
+    <style type="text/tailwindcss"></style>
+</head>
+<body class="font-poppins">
+    <section id="Registrasi">
+        <div class="grid grid-cols-1 lg:grid-cols-2">
+            <div class="relative flex items-start px-4 pb-8 pt-32 sm:pb-16 md:justify-center lg:pb-24 bg-gray-50 sm:px-6 lg:px-8">
+                <div class="absolute inset-0">
+                    <img class="object-cover object-top w-full h-full" src="img/regis.png" alt="" id="image">
+                </div>
+            </div>
+
+            <div class="flex items-center justify-center px-4 py-2 bg-white sm:px-6 lg:px-8 sm:py-16">
+                <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+                    <img class="w-28 h-20 mb-14 mx-36" src="img/logo-radian 1.png" alt="">
+                    <h2 class="text-xl font-medium text-black sm:text-xl mb-2">Registrasi</h2>
+                    <p class="mt-2 text-lg font-normal text-body">Nowadays, it isn’t uncommon to see </p>
+                    <div>
+                        <button class="text-lg font-medium text-black py-5 px-4 bg-border rounded-lg">
+                            <input type="radio" name="agree" id="agree" class="w-5 h-5 text-blue-600 bg-transparent border border-primary rounded-full">
+                                <label for="agree" class="ml-2 self-center">
+                                    Sebagai Siswa
+                                </label>
+                        </button>
+                        <button onclick="change()" class="text-lg font-medium text-black py-5 px-4 bg-border rounded-lg">
+                            <input type="radio" name="agree" id="agree" class="w-5 h-5 text-blue-600 bg-white border-primary rounded-full">
+                                <label for="agree" class="ml-2 font-medium">
+                                    Sebagai Guru 
+                                </label>
+                        </button>
+                    </div>
+                    <form action="#" method="POST" class="mt-8">
+                        <div class="space-y-5">
+                            <div>
+                                <label for="" class="text-base font-normal text-black">Name</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="text" name="" id="" placeholder="Type Name" class="block w-full p-4 text-black transition-all border border-body duration-200 rounded-md focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-base font-normal text-black"> E-mail</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input
+                                        type="email"
+                                        name=""
+                                        id=""
+                                        placeholder="Type Email"
+                                        class="block w-full p-4 text-black transition-all duration-200 border border-body rounded-md focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label for="" class="text-base font-normal text-black">No. Telephone </label>
+                                </div>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="tel" pattern="[0]{1}[8]{1}[0-8]{1}[0-9]{3}[0-9]{3}[0-9]{3}" name="" id="" placeholder="Type Number" class="block w-full p-4 text-black transition-all duration-200 border border-body rounded-md focus:outline-none focus:border-blue-600 focus: bg-white caret-blue-600">
+                                </div>
+                            </div>
+    
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label for="" class="text-base font-normal text-black"> Password </label>
+                                </div>
+                                <div class="mt-2 relative text-body focus-within:text-gray-600">
+                                    <input
+                                        type="password"
+                                        name=""
+                                        id=""
+                                        placeholder="Type Password"
+                                        class="block w-full p-4 text-black transition-all duration-200 border border-body rounded-md focus:outline-none focus:border-blue-600 focus:bg-white caret-blue-600"
+                                    />
+                                </div>
+                            </div>
+
+                            <div>
+                                <input type="checkbox" name="agree" id="agree" class="w-5 h-5 text-blue-600 bg-transparent border border-primary rounded-lg" />
+                                <label for="agree" class="ml-3 text-sm font-medium text-black mr-10">
+                                    Remember me
+                                </label>
+                            </div>
+    
+                            <div class="flex">
+                                <button type="submit" class="inline-flex items-center justify-center px-4 py-4 text-base font-semibold text-white transition-all duration-200 rounded-lg bg-primary">
+                                    Sign Up
+                                </button>
+                                <p class="flex text-sm font-normal text-body mt-5">Have an account <a href="#" class="text-primary hover:underline">Login here</a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="registrasi.js"></script>
+</body>
+</html>
