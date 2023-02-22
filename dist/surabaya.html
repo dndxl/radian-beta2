@@ -13,6 +13,60 @@
 </head>
 <body class="font-poppins">
 
+    <!-- navbar section start -->
+    <header class="bg-white absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#" class="py-6">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button"
+                class="block absolute right-4 lg:hidden">
+                    <span class="hamburger-line transition duration-300
+                    ease-in-out origin-top-left "></span>
+                    <span class="hamburger-line transition duration-300
+                    ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300
+                    ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white
+                    shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block
+                    lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="home.html" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="#alumni" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Alumni</a>
+                        </li>
+                        <li class="group">
+                            <a href="#testi" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Testimoni</a>
+                        </li>
+                        <li class="group">
+                            <a href="#unggul" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Keunggulan</a>
+                        </li>
+                        <li class="group">
+                            <a href="#program" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Program</a>
+                        </li>
+                        <li class="group">
+                            <a href="#daftar" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-surabaya">Daftar</a>
+                        </li>
+                        <li class="group">
+                            <button class="text-base text-surabaya font-medium py-2 px-3 mx-8 border bg-herosby rounded-lg">Hubungi Kami</button>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- navbar section end -->
+
     <!-- hero section start -->
     <section id="#" class="pt-16 pb-12">
         <div class="container">
@@ -98,7 +152,7 @@
             <div class="flex">
                 <div id="slidercarousel" class="w-full overflow-hidden">
                     <ul id="slids" class="flex w-full">
-                        <li>
+                        <li class="mr-3">
                             <div class="bg-white border border-body rounded-2xl mb-10 mt-7">
                                 <div class="flex items-center justify-center h-auto">
                                     <div class="rounded-full w-12 h-12 bg-slate-200 flex justify-center items-center">
@@ -115,7 +169,7 @@
                         </div>
                         </li>
 
-                        <li>
+                        <li class="mr-3">
                             <div class="bg-white border border-body rounded-2xl mb-10 mt-7">
                                 <div class="flex items-center justify-center h-auto">
                                     <div class="rounded-full w-12 h-12 bg-slate-200 flex justify-center items-center">
@@ -132,7 +186,7 @@
                             </div>
                         </li>
 
-                        <li>
+                        <li class="mr-3">
                             <div class="bg-white border border-body rounded-2xl mb-10 mt-7">
                                 <div class="flex items-center justify-center h-auto">
                                     <div class="rounded-full w-12 h-12 bg-slate-100 flex justify-center items-center">
@@ -183,7 +237,7 @@
     <section id="#" class="pt-16 pb-12 bg-slate-100">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full pl-4 pr-14 lg:w-1/2">
+                <div class="w-full self-center pl-4 pr-14 lg:w-1/2">
                     <h5 class="text-lg font-semibold text-surabaya mb-2">PROGRAM</h5>
                     <h1 class="text-5xl font-semibold text-black mb-4 max-w-7xl">Program Radian Edu</h1>
                     <p class="text-lg font-normal text-body max-w-5xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Viverra quis elementum, nisl feugiat. Augue arcu euis</p>
@@ -193,7 +247,16 @@
                         <ul class="flex">
                             <li>
                                 <div class="bg-white rounded-3xl shadow-lg mb-10 w-[255px] h-[420px] mr-6">
-                                    <img src="img/program1.png" alt="">
+                                    <div class="h-[210px]" style="background-image: url(img/program1.png);">
+                                        <div class="pt-8 pl-7">
+                                            <button class="bg-primary rounded-lg shadow-md px-3 py-2 text-white text-sm font-semibold self-center flex flex-wrap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                                                    <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                HEADLINE
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="py-8 px-6">
                                         <h3 class="mb-3 text-xl font-medium text-black">Program Private</h3>
                                         <p class="text-lg font-normal text-text mb-6">Ayo tulis tutor semau kamu, biar kami yang bantu carikan!</p>
@@ -202,7 +265,16 @@
                             </li>
                             <li>
                                 <div class="bg-white rounded-3xl shadow-lg mb-10 w-[255px] h-[420px] mr-6">
-                                    <img src="img/program2.png" alt="">
+                                    <div class="h-[210px]" style="background-image: url(img/program2.png);">
+                                        <div class="pt-8 pl-7">
+                                            <button class="bg-primary rounded-lg shadow-md px-3 py-2 text-white text-sm font-semibold self-center flex flex-wrap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                                                    <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                HEADLINE
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="py-8 px-6">
                                         <h3 class="mb-3 text-xl font-medium text-black">Program Class</h3>
                                         <p class="text-lg font-normal text-text mb-6">Ayo tulis tutor semau kamu, biar kami yang bantu carikan!</p>
@@ -211,7 +283,16 @@
                             </li>
                             <li>
                                 <div class="bg-white rounded-3xl shadow-lg mb-10 w-[255px] h-[420px] mr-6">
-                                    <img src="img/program3.png" alt="">
+                                    <div class="h-[210px]" style="background-image: url(img/program3.png);">
+                                        <div class="pt-8 pl-7">
+                                            <button class="bg-primary rounded-lg shadow-md px-3 py-2 text-white text-sm font-semibold self-center flex flex-wrap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                                                    <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                HEADLINE
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="py-8 px-6">
                                         <h3 class="mb-3 text-xl font-medium text-black">Supercamp</h3>
                                         <p class="text-lg font-normal text-text mb-6">Ayo tulis tutor semau kamu, biar kami yang bantu carikan!</p>
@@ -220,7 +301,16 @@
                             </li>
                             <li>
                                 <div class="bg-white rounded-3xl shadow-lg mb-10 w-[255px] h-[420px] mr-6">
-                                    <img src="img/program1.png" alt="">
+                                    <div class="h-[210px]" style="background-image: url(img/program1.png);">
+                                        <div class="pt-8 pl-7">
+                                            <button class="bg-primary rounded-lg shadow-md px-3 py-2 text-white text-sm font-semibold self-center flex flex-wrap">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5 text-white">
+                                                    <path fill-rule="evenodd" d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z" clip-rule="evenodd" />
+                                                </svg>
+                                                HEADLINE
+                                            </button>
+                                        </div>
+                                    </div>
                                     <div class="py-8 px-6">
                                         <h3 class="mb-3 text-xl font-medium text-black">Program Private</h3>
                                         <p class="text-lg font-normal text-text mb-6">Ayo tulis tutor semau kamu, biar kami yang bantu carikan!</p>
@@ -255,7 +345,7 @@
                     <img src="img/logo.png" alt="">
                     <p class="text-base font-normal text-text">Jl. Akses UI No. 99, Perkantoran Wisma Kencana Putri</p>
                     <p class="text-base font-normal text-text">Kecamatan Tugu - Cimanggis</p>
-                    <p class="text-base font-normal text-text">Kota Depok - 16452</p>
+                    <p class="text-base font-normal text-text">Kota Depok - 16451</p>
                 </div>
 
                 <div class="w-full px-4 md:w-1/4">
@@ -310,12 +400,13 @@
                 </div>
 
                 <div class="w-full pt-10 border-t border-text">
-                    <p class="font-normal text-sm text-center text-black">© Copyright 2022, All Rights Reserved by Yayasan Radian Solusi Indonesia</p>
+                    <p class="font-normal text-sm text-center text-black">© Copyright 2023, All Rights Reserved by Yayasan Radian Solusi Indonesia</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- footer section end -->
     
+    <script src="JS/surabaya.js"></script>
 </body>
 </html>
