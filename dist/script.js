@@ -7,18 +7,18 @@ hamburger.addEventListener('click', function (){
     navMenu.classList.toggle('hidden');
 });
 
-//navbar fixed
-window.onscroll = function() {
-    const header = document.querySelector('header');
-    const fixedNav = header.offsetTop;
 
-    if(window.pageYOffset > fixedNav) {
-        header.classList.add('navbar-fixed');
-    } else{
-        header.classList.remove('navbar-fixed');
-    }
-};
+// //navbar fixed
+// window.onscroll = function() {
+//     const header = document.querySelector('header');
+//     const fixedNav = header.offsetTop;
 
+//     if(window.pageYOffset > fixedNav) {
+//         header.classList.add('navbar-fixed');
+//     } else{
+//         header.classList.remove('navbar-fixed');
+//     }
+// }; 
 // carousel promo
 let slidercontainer = document.getElementById('slidercontainer');
 let slider = document.getElementById('slider');
