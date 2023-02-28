@@ -23,7 +23,7 @@ module.exports = {
         footer: '#F8FAFC',
         secondary: '#FFE099',
         sd: '#EA4242',
-        red: '#FF0000',
+        // red: '#FF0000',
         radian: '#33ABFF',
         orange: '#FF8A00',
         mhs: '#4C26FF',
