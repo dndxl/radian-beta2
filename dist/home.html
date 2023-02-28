@@ -12,6 +12,11 @@
     <title>Radian Edu Solution</title>
     <link rel="stylesheet" href="css/output.css">
     <style type="text/tailwindcss"></style>
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 <body class="font-poppins">
     
@@ -42,97 +47,101 @@
                 <div class="flex items-center justify-between relative">
     
                     <div class="flex items-center px-4">
-                        <button id="hamburger" name="hamburger" type="button"
-                    class="block absolute right-4 lg:hidden">
-                        <span class="hamburger-line transition duration-300
-                        ease-in-out origin-top-left "></span>
-                        <span class="hamburger-line transition duration-300
-                        ease-in-out"></span>
-                        <span class="hamburger-line transition duration-300
-                        ease-in-out origin-bottom-left"></span>
-                    </button>
+                        <div class="flex justify-between items-center">
+                            <a href="#">
+                                
+                                  
+                            </a>
+                        </div>
+                        <label for="menu-toggle" class="pointer-cursor right-0 lg:hidden block">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                            </svg></label>
+                        <input class="hidden" type="checkbox" id="menu-toggle" />
 
-                        <nav id="nav-menu" class="hidden absolute py-5 bg-white
-                        shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block
-                        lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none  ">
-                            <ul class="block lg:flex">
-                                <li class="group mx-auto">
-                                    <a href="#" class="text-sm font-medium text-white mr-32">Home</a>
-                                </li>
-                                <li x-data="{ dropdownOpen: false }" class="relative group">
-                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Produk</button>
-                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Camp</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Les Privat</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat CPNS</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat Garansi</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Kedokteran</a>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                    
-                                </li>
-                                <li x-data="{ dropdownOpen: false }" class="relative group">
-                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Area Layanan</button>
-                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Jabodetabek</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Yogyakarta</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Surabaya</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Bandung</a>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                    
-                                </li>
-                                <li x-data="{ dropdownOpen: false }" class="relative group">
-                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Tingkatan</button>
-                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
-                                        <ul>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SD</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMP</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMA</a>
-                                            </li>
-                                            <li>
-                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Mahasiswa</a>
-                                            </li>
-                                        </ul>
-                                    </div> 
-                                    
-                                </li>
-                                <li class="group mx-auto">
-                                    <a href="#" class="text-sm font-medium text-white mr-28">Testimoni</a>
-                                </li>
-                                <li class="group mx-auto">
-                                    <a href="#" class=" text-sm font-medium text-white">News</a>
-                                </li>
-                            </ul>
-                        </nav>
+
+                        <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                            <nav>
+                                <ul class="pt-2 pb-3 shadow-lg rounded-lg max-w-full lg:flex">
+                                    <li class="group mx-auto">
+                                        <a href="#" class="text-sm font-medium text-white mr-32">Home</a>
+                                    </li>
+                                    <li x-data="{ dropdownOpen: false }" class="relative group">
+                                        <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Produk</button>
+                                        <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                        <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Camp</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Les Privat</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat CPNS</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat Garansi</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Kedokteran</a>
+                                                </li>
+                                            </ul>
+                                        </div> 
+                                        
+                                    </li>
+                                    <li x-data="{ dropdownOpen: false }" class="relative group">
+                                        <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Area Layanan</button>
+                                        <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                        <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Jabodetabek</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Yogyakarta</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Surabaya</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Bandung</a>
+                                                </li>
+                                            </ul>
+                                        </div> 
+                                        
+                                    </li>
+                                    <li x-data="{ dropdownOpen: false }" class="relative group">
+                                        <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Tingkatan</button>
+                                        <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                        <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SD</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMP</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMA</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Mahasiswa</a>
+                                                </li>
+                                            </ul>
+                                        </div> 
+                                        
+                                    </li>
+                                    <li class="group mx-auto">
+                                        <a href="#" class="text-sm font-medium text-white mr-28">Testimoni</a>
+                                    </li>
+                                    <li class="group mx-auto">
+                                        <a href="#" class=" text-sm font-medium text-white">News</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
     
                     </div>
                 </div>
