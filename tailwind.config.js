@@ -33,6 +33,9 @@ module.exports = {
         surabaya: '#F88E27',
         herosby: '#FEF5ED',
         border: '#EEF8FF',
+        txtdokter: '#1C244B',
+        bdydokter: '#324A6D',
+        camp : '#068292',
       },
 
       screens: {
