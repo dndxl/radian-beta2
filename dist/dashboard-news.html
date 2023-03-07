@@ -40,7 +40,7 @@
                         <!-- list menu  -->
                         <ul class="main-menu flex flex-col items-start mt-12">
                             <li class="pl-[27px] w-full md:w-[224px] pt-[15px] rounded-lg  bg-active">
-                                <a href="" class="flex flex-row text-black hover:border hover:bg-secondary w-[201px] h-[54px] bg-secondary mx-auto items-center text-center p-4 rounded-lg">
+                                <a href="" class="flex flex-row text-body p-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
                                         <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
                                     </svg>
@@ -66,7 +66,7 @@
                                 </a>
                             </li>
                             <li class="pl-[27px] w-full md:w-[224px] pt-[15px] rounded-lg group  hover:bg-active mt-1">
-                                <a href="" class="flex flex-row items-center text-body p-4">
+                                <a href="" class="flex flex-row items-center text-black hover:border hover:bg-secondary w-[201px] h-[54px] bg-secondary mx-auto text-center p-4 rounded-lg">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
                                         <path fill-rule="evenodd" d="M2 3.5A1.5 1.5 0 013.5 2h9A1.5 1.5 0 0114 3.5v11.75A2.75 2.75 0 0016.75 18h-12A2.75 2.75 0 012 15.25V3.5zm3.75 7a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zm0 3a.75.75 0 000 1.5h4.5a.75.75 0 000-1.5h-4.5zM5 5.75A.75.75 0 015.75 5h4.5a.75.75 0 01.75.75v2.5a.75.75 0 01-.75.75h-4.5A.75.75 0 015 8.25v-2.5z" clip-rule="evenodd" />
                                         <path d="M16.5 6.5h-1v8.75a1.25 1.25 0 102.5 0V8a1.5 1.5 0 00-1.5-1.5z" />
@@ -76,7 +76,7 @@
                                 </a>
                             </li>
                             <li class="pl-[27px] w-full md:w-[224px] pt-[15px] rounded-lg group  hover:bg-active mt-1">
-                                <a href="" class="flex flex-row items-center text-body p-4">
+                                <a href="user-access.html" class="flex flex-row items-center text-body p-4">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5 mr-2">
                                         <path d="M10 8a3 3 0 100-6 3 3 0 000 6zM3.465 14.493a1.23 1.23 0 00.41 1.412A9.957 9.957 0 0010 18c2.31 0 4.438-.784 6.131-2.1.43-.333.604-.903.408-1.41a7.002 7.002 0 00-13.074.003z" />
                                     </svg>
@@ -180,27 +180,33 @@
                     <!-- dashboarde content  -->
                     <div class="main-content ml-14">
                         <h1 class="text-3xl font-semibold text-black mb-12 mt-7">Update Berita</h1>
-                        <div class="flex">
-                            <div class="w-[389px] h-[214px] bg-white rounded-xl">
-                                <h1 class="text-xl font-medium text-black mb-6 mt-[30px] mx-auto text-center">Jumlah Guru Yang Aktif</h1>
-                                <div class="flex flex-wrap mx-auto items-center text-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[100px] h-[100px] text-primary">
-                                        <path d="M6.25 6.375a4.125 4.125 0 118.25 0 4.125 4.125 0 01-8.25 0zM3.25 19.125a7.125 7.125 0 0114.25 0v.003l-.001.119a.75.75 0 01-.363.63 13.067 13.067 0 01-6.761 1.873c-2.472 0-4.786-.684-6.76-1.873a.75.75 0 01-.364-.63l-.001-.122zM19.75 7.5a.75.75 0 00-1.5 0v2.25H16a.75.75 0 000 1.5h2.25v2.25a.75.75 0 001.5 0v-2.25H22a.75.75 0 000-1.5h-2.25V7.5z" />
-                                    </svg>                                      
-                                    <h3 class="text-3xl font-semibold text-primary max-w-[79px] ml-[19px]">26 Guru</h3>
+                        <form>
+                            <div>
+                                <div class="px-4 mb-8">
+                                    <label for="name" class="text-sm font-medium text-body mb-2">Judul</label>
+                                    <input type="text" id="name" class="w-[680px] flex bg-transparent text-black p-3 border border-body 
+                                    rounded-md focus:ring-body focus:border-body">
                                 </div>
-                            </div>
 
-                            <div class="w-[389px] h-[214px] bg-white rounded-xl ml-6">
-                                <h1 class="text-xl font-medium text-black mb-6 mt-[30px] mx-auto text-center">Jumlah Guru Yang Tidak Aktif</h1>
-                                <div class="flex flex-wrap mx-auto items-center text-center justify-center">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-[100px] h-[100px] text-sd">
-                                        <path d="M10.375 2.25a4.125 4.125 0 100 8.25 4.125 4.125 0 000-8.25zM10.375 12a7.125 7.125 0 00-7.124 7.247.75.75 0 00.363.63 13.067 13.067 0 006.761 1.873c2.472 0 4.786-.684 6.76-1.873a.75.75 0 00.364-.63l.001-.12v-.002A7.125 7.125 0 0010.375 12zM16 9.75a.75.75 0 000 1.5h6a.75.75 0 000-1.5h-6z" />
-                                    </svg>  
-                                    <h3 class="text-3xl font-semibold text-sd ma-w-[40px] ml-[19px]">4 Guru</h3>                                    
+                                <div class="px-4 mb-8">
+                                    <label for="name" class="text-sm font-medium text-body mb-2">Nama Pengupload</label>
+                                    <input type="text" id="name" class="w-[680px] flex bg-transparent text-black p-3 border border-body 
+                                    rounded-md focus:ring-body focus:border-body">
+                                </div>
+
+                                <div class="px-4 mb-8">
+                                    <label for="date" class="text-sm font-medium text-body mb-2">Tanggal DiUpload</label>
+                                    <input type="date" id="date" class="w-[680px] flex bg-transparent text-black p-3 border border-body 
+                                    rounded-md focus:ring-body focus:border-body">
+                                </div>
+
+                                <div class="px-4 mb-8">
+                                    <label for="message" class="text-sm font-medium text-body mb-2">Tambahkan Berita<span class="ml-[505px] text-right right-0">0/200</span></label>
+                                    <textarea type="message" id="message" class="w-[680px] h-[228px] flex bg-transparent text-black p-3 border border-body 
+                                    rounded-md focus:ring-body focus:border-body"></textarea>
                                 </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                     <!-- dashboard end content  -->
 
