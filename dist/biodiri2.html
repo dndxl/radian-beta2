@@ -10,94 +10,302 @@
     <title>Student Registration - Biodata Keluarga</title>
     <link rel="stylesheet" href="css/output.css">
     <style type="text/tailwindcss"></style>
+    <style>
+        #menu-toggle:checked+#menu {
+            display: block;
+        }
+    </style>
 </head>
 <body class="font-poppins">
 
-    <!-- biodata section start -->
-    <section id="#" class="pt-9">
-        <div class="px-[360px] pt-14 pb-7">
-            <div class="grid grid-cols-1 bg-white shadow-lg rounded-lg justify-center items-center w-[715px] h-[1090px]">
-                <div class="absolute flex justify-center items-center self-start">
-                    <img src="img/keluarga.png" alt="" class="w-full h-[181px]">
-                </div>
-                <div class="relative">
-                    <div class="w-full max-w-xl xl:w-full xl:mx-auto xl:max-w-xl mt-16 items-center justify-center">
-                        <h3 class="text-5xl font-semibold text-white mb-4 flex items-center justify-center">Biodata Keluarga</h3>
-                        <p class="text-lg font-normal text-white flex items-center justify-center">Isilah biodata diri di bawah ini!</p>
+   <!-- navbar section start -->
+   <header>
+    <!-- navbar 1 section -->
+    <div class="bg-transparent top-0 left-0 w-full flex items-center z-10">
+            <div class="px-4 flex pt-4">
+                <img src="img/logo.png" alt="" class="px-4 py-2">
+            </div>
+            <div class="lg:px-4 flex pt-4">
+                <span class="lg:text-base text-xs font-medium border border-secondary bg-secondary px-4 py-2 pt-2 self-center text-center text-dark rounded-lg ml-7 mb-3 lg:mb-0"><a href="daftarguru.html">Temukan Guru</a></span>
+                <span class="lg:text-base text-xs font-medium border border-secondary bg-secondary lg:px-4 py-2 text-center text-dark rounded-lg ml-4 mr-2 lg:mr-0 mb-3 lg:mb-0"><a href="registrasi.html">Daftar Sebagai Guru</a></span>
+            </div>
+            
+    </div>
+    <!-- navbar 1 section end -->
+
+    <!-- navbar 2 section start -->
+    <div class="bg-primary top-0 left-0 w-full flex items-center z-10 h-[50px]">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+
+                <div class="flex items-center px-4">
+                    <div class="flex justify-between items-center">
+                        <a href="#">
+                            
+                        </a>
                     </div>
+                    <label for="menu-toggle" class="pointer-cursor right-0 lg:hidden block">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg></label>
+                    <input class="hidden" type="checkbox" id="menu-toggle" />
+
+
+                    <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+                        <nav>
+                            <ul class="pt-2 pb-3 shadow-lg rounded-lg max-w-full lg:flex">
+                                <li class="group mx-auto self-center">
+                                    <a href="home.html" class="text-sm font-medium text-white mr-32">Home</a>
+                                </li>
+                                <li x-data="{ dropdownOpen: false }" class="relative group self-center">
+                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Produk</button>
+                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                        <ul>
+                                            <li>
+                                                <a href="supercamp.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Camp</a>
+                                            </li>
+                                            <li>
+                                                <a href="privat.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Les Privat</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat CPNS</a>
+                                            </li>
+                                            <li>
+                                                <a href="privat.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Privat Garansi</a>
+                                            </li>
+                                            <li>
+                                                <a href="supercamp.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Kedokteran</a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                    
+                                </li>
+                                <li x-data="{ dropdownOpen: false }" class="relative group self-center">
+                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Area Layanan</button>
+                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                        <ul>
+                                            <li>
+                                                <a href="jabodetabek.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Jabodetabek</a>
+                                            </li>
+                                            <li>
+                                                <a href="jogja.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Yogyakarta</a>
+                                            </li>
+                                            <li>
+                                                <a href="surabaya.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Surabaya</a>
+                                            </li>
+                                            <li>
+                                                <a href="bandung.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Bandung</a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                    
+                                </li>
+                                <li x-data="{ dropdownOpen: false }" class="relative group self-center">
+                                    <button @click="dropdownOpen = !dropdownOpen" class="relative z-10 text-sm font-medium text-white mr-28 overflow-hidden focus:outline-none focus:border-white">Tingkatan</button>
+                                    <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+                                    <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 w-48 bg-white rounded-md shadow-xl z-20">
+                                        <ul>
+                                            <li>
+                                                <a href="sd.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SD</a>
+                                            </li>
+                                            <li>
+                                                <a href="smp.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMP</a>
+                                            </li>
+                                            <li>
+                                                <a href="sma.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">SMA</a>
+                                            </li>
+                                            <li>
+                                                <a href="mahasiswa.html" class="block px-4 py-2 text-sm capitalize text-gray-800 hover:bg-indigo-500 hover:text-white">Mahasiswa</a>
+                                            </li>
+                                        </ul>
+                                    </div> 
+                                    
+                                </li>
+                                <li class="group mx-auto self-center">
+                                    <a href="#testi" class="text-sm font-medium text-white mr-28">Testimoni</a>
+                                </li>
+                                <li class="group mx-auto self-center">
+                                    <a href="news.html" class=" text-sm font-medium text-white mr-28">News</a>
+                                </li>
+                                <li class="group mx-auto self-center">
+                                    <button class="text-white text-sm font-semibold text-center px-4 py-2 mr-8">
+                                        <a href="registrasi.html">Daftar</a> </button>
+                                </li>
+                                <li class="group mx-auto self-center">
+                                    <button class="text-white font-semibold text-sm border border-white px-4 py-2 rounded-lg ml-4 justify-items-end">
+                                        <a href="login.html">Masuk</a>
+                                    </button>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+
                 </div>
-                <div class="flex items-center justify-center px-[72px] pt-10 pb-16">
-                    <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
-                        <form action="#" method="POST">
-                            <div class="space-y-7">
-                                <div>
-                                    <label for="" class="text-xl font-normal text-black">Nama Lengkap Wali Murid</label>
-                                    <div class="mt-2 relative text-body focus-within:text-black">
-                                        <input type="text" name="" id="" placeholder="nama lengkap" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
-                                    </div>
-                                </div>
+            </div>
+            
+        </div>
+    </div>
 
-                                <div>
-                                    <label for="" class="text-xl font-normal text-black">Tempat, Tanggal Lahir</label>
-                                    <div class=" mt-2 relative text-body focus-within:text-black">
-                                        <input type="date" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all duration-100 border border-body rounded focus:outline-none focus:border-primary focus:bg-white">
-                                    </div>
-                                </div>
+    <!-- navbar 2 section end -->
+   
+    </header>
+    <!-- navbar section end -->
 
-                                <div>
-                                    <label for="" class="text-xl font-normal text-black">Jenis Kelamin</label>
-                                    <div class="mt-2 relative text-body focus-within:text-black">
-                                        <select class="block w-full p-4 text-black transition-all duration-100 border border-body rounded focus:outline-none focus:border-primary focus:bg-white">
-                                            <option value="0">Select</option>
-                                            <option value="1">Laki-Laki</option>
-                                            <option value="2">Perempuan</option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="" class="text-xl font-normal text-black">Status Hubungan Keluarga</label>
-                                    <div class="mt-2 relative text-body focus-within:text-black">
-                                        <input type="text" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div class="flex items-center justify-between">
-                                        <label for="" class="text-base font-normal text-black">No. Telephone </label>
-                                    </div>
-                                    <div class="mt-2 relative text-body focus-within:text-black">
-                                        <input type="tel" pattern="[0]{1}[8]{1}[0-8]{1}[0-9]{3}[0-9]{3}[0-9]{3}" name="" id="" placeholder="Type Number" class="block w-full p-4 text-black transition-all duration-200 border border-body rounded-md focus:outline-none focus:border-blue-600 focus: bg-white caret-blue-600">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <label for="" class="text-xl font-normal text-black">Pekerjaan</label>
-                                    <div class="mt-2 relative text-body focus-within:text-black">
-                                        <input type="text" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <button type="submit" class="block w-full p-4 text-white transition-all bg-primary duration-100 rounded focus:outline-none focus:border-primary mb-4">
-                                        Daftar
-                                    </button>
-                                </div>
-
-                                <div>
-                                    <button class="block w-full p-4 text-primary border border-primary transition-all duration-100 rounded focus:outline-none focus:bg-primary hover:bg-primary hover:text-white">
-                                        Sebelumnya
-                                    </button>
+<!-- biodata section start -->
+<section id="#" class="pt-9">
+    <div class="mx-auto pt-14 pb-7 flex items-center justify-center">
+        <div class="grid grid-cols-1 bg-white shadow-lg rounded-lg justify-center items-center w-[750px] h-[1090px]">
+            <div class="flex justify-center items-center self-start">
+                <img src="img/rule-keluarga.png" alt="" class="w-full h-[181px]">
+            </div>
+            <div class="flex items-center justify-center px-[72px] pt-8 pb-16">
+                <div class="xl:w-full xl:max-w-sm 2xl:max-w-md xl:mx-auto">
+                    <form action="#" method="POST">
+                        <div class="space-y-5">
+                            <div>
+                                <label for="" class="text-xl font-normal text-black">Nama Lengkap Wali Murid</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="text" name="" id="" placeholder="nama lengkap" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
                                 </div>
                             </div>
-                        </form>
-                    </div>
+
+                            <div>
+                                <label for="" class="text-xl font-normal text-black">Tempat, Tanggal Lahir</label>
+                                <div class=" mt-2 relative text-body focus-within:text-black">
+                                    <input type="date" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all duration-100 border border-body rounded focus:outline-none focus:border-primary focus:bg-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-xl font-normal text-black">Jenis Kelamin</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <select class="block w-full p-4 text-black transition-all duration-100 border border-body rounded focus:outline-none focus:border-primary focus:bg-white">
+                                        <option value="0">Select</option>
+                                        <option value="1">Laki-Laki</option>
+                                        <option value="2">Perempuan</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-xl font-normal text-black">Status Hubungan Keluarga</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="text" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="flex items-center justify-between">
+                                    <label for="" class="text-base font-normal text-black">No. Telephone </label>
+                                </div>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="tel" pattern="[0]{1}[8]{1}[0-8]{1}[0-9]{3}[0-9]{3}[0-9]{3}" name="" id="" placeholder="Type Number" class="block w-full p-4 text-black transition-all duration-200 border border-body rounded-md focus:outline-none focus:border-blue-600 focus: bg-white caret-blue-600">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="" class="text-xl font-normal text-black">Pekerjaan</label>
+                                <div class="mt-2 relative text-body focus-within:text-black">
+                                    <input type="text" name="" id="" placeholder="Placeholder text" class="block w-full p-4 text-black transition-all border border-body duration-100 rounded focus:outline-none focus:border-primary focus:bg-white">
+                                </div>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="block w-full p-4 text-white transition-all bg-primary duration-100 rounded-lg focus:outline-none focus:border-primary">
+                                   <a href="biodiri2.html">Daftar</a>
+                                </button>
+                            </div>
+
+                            <div>
+                                <button type="submit" class="block w-full p-4 text-primary transition-all border border-primary duration-100 rounded-lg focus:outline-none focus:border-primary">
+                                   <a href="biodiri2.html">Sebelumnya</a>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
-        
-    </section>
-    <!-- biodata section end -->
+    </div>
+    
+</section>
+<!-- biodata section end -->
+
+<!-- footer section start -->
+<footer class="bg-footer pt-24 pb-12">
+    <div class="container">
+        <div class="flex flex-wrap">
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <img src="img/logo.png" alt="" class="mb-4">
+                <p class="text-base font-normal text-text">Jl. Akses UI No. 99, Perkantoran Wisma Kencana Putri,</p>
+                <p class="text-base font-normal text-text">Kecamatan Tugu - Cimanggis</p>
+                <p class="text-base font-normal text-text">Kota Depok - 16451.</p>
+            </div>
+
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-base text-text mb-6">COMPANY</h3>
+                <ul class="text-black">
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Supercamp</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Daftar Tutor</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Student Registration</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Cari Tutor</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-base text-text mb-6">HELP</h3>
+                <ul class="text-black">
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Customer Support</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Delivery Details</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Terms & Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#" class="inline-block text-base hover:text-primary mb-6">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="w-full px-4 mb-12 md:w-1/4">
+                <h3 class="font-semibold text-base text-text mb-7">RADIAN NEWS</h3>
+                <div class="w-full mb-8">
+                    <form action="" class="w-full max-w-md">
+                        <div class="relative flex text-text">
+                            <input type="email" name="email" placeholder="Enter Your Email Address" autocomplete="off" aria-label="Enter Your Email Address" class="w-full p-3 font-normal rounded-lg">
+                        </div>
+                    </form>
+                </div>
+                <button class="text-base font-semibold border border-black bg-primary px-4 py-2 text-center text-white rounded-lg mb-16" href="#">Subscribe Now</button>
+            </div>
+
+            <div class="w-full pt-10 border-t border-text">
+                <p class="font-normal text-sm text-center text-black">© Copyright 2023, All Rights Reserved by Yayasan Radian Solusi Indonesia</p>
+            </div>
+           
+        </div>
+    </div>
+</footer>
+<!-- footer section end -->
+
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     
 </body>
 </html>

@@ -13,12 +13,69 @@
 </head>
 <body class="font-poppins">
 
+  <!-- naavbar section start -->
+  <header class="bg-white absolute top-0 left-0 w-full flex items-center z-0">
+    <div class="container">
+        <div class="flex items-center justify-between relative">
+            <div class="px-4">
+                <a href="#" class="py-6">
+                    <img src="img/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="flex items-center px-4">
+                <button id="hamburger" name="hamburger" type="button"
+            class="block absolute right-4 lg:hidden">
+                <span class="hamburger-line transition duration-300
+                ease-in-out origin-top-left "></span>
+                <span class="hamburger-line transition duration-300
+                ease-in-out"></span>
+                <span class="hamburger-line transition duration-300
+                ease-in-out origin-bottom-left"></span>
+                </button>
+
+            <nav id="nav-menu" class="hidden absolute py-5 bg-white
+                shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block
+                lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                <ul class="block lg:flex">
+                    <li class="group">
+                        <a href="home.html" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">Home</a>
+                    </li>
+                    <li class="group">
+                        <a href="#alumni" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">About</a>
+                    </li>
+                    <li class="group">
+                        <a href="#testi" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">Program</a>
+                    </li>
+                    <li class="group">
+                        <a href="#unggul" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">promo</a>
+                    </li>
+                    <li class="group">
+                        <a href="#program" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">Paket</a>
+                    </li>
+                    <li class="group">
+                        <a href="#daftar" class="text-base text-body font-medium py-2 mx-8 flex group-hover:text-mhs">Daftar</a>
+                    </li>
+                    <li class="group">
+                        <button class="text-base text-white font-medium py-2 px-3 mx-8 border bg-sd rounded-lg">
+                            <a href="https://wa.me/+6288232172459?text=Halo%20radian%20%0A%0ANama%20%3A%20%0AAsal%20Kota%20%3A%20%0ASekolah%20dan%20Kelas%20%3A%20%0AOrang%20Tua%20%2F%20Siswa%20%3F%20%3A%0ASaya%20mengetahui%20program%20ini%20melalui%20website%20mahasiswa%20">
+                                Hubungi Kami
+                            </a></button>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- navbar section end -->
+
     <!-- hero section start -->
     <section id="#" class="pt-16 w-full h-full" style="background-size:  cover; background-image: url(img/bg-sd.png);">
     <div class="container">
         <div class="flex flex-wrap">
             <div class="w-full self-center px-4 lg:w-1/2">
-                <div class="bg-second rounded-t-3xl rounded-bl-3xl shadow-lg mb-6 pl-11 px-6 py-2">
+                <div class="bg-second rounded-t-3xl rounded-bl-3xl shadow-lg mb-6 w-[300px] h-[50px] px-6 py-2">
                     <h3 class="text-xl font-semibold text-black">PROGRAM PTS & PAS</h3>
                 </div>
                 <h1 class="font-bold text-white text-5xl mt-4">AYO PERSIAPKAN UJIANMU DENGAN GURU YANG ASIK</h1>
@@ -38,66 +95,56 @@
     <!-- hero section end -->
     
     <!-- alumni section start -->
-    <section id="#" class="pt-16 bg-slate-100">
+    <section id="#" class="pt-16 bg-slate-100 pb-[50px]">
         <div class="container">
             <div class="w-full px-4 mb-10">
                 <div class="max-w-xl mx-auto text-center">
-                    <h3 class="font-semibold text-5xl text-primary mb-0 pt-16">ALUMNI RADIAN</h3>
+                    <h3 class="font-semibold text-5xl text-sd mb-0 pt-16">ALUMNI RADIAN</h3>
                     <p class="font-normal text-lg text-black mt-0 mb-8">Beberapa generasi Radian yang berhasil lolos PTN</p>
                 </div>
             </div>
 
             <div class="flex">
-                <div class="w-3/12 flex items-center">
-                    <div class="w-full text-right">
-                      <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-                        </svg>                
-                      </button>
-                    </div>
-                </div>
 
-                <div id="sliderContainer" class="w-full overflow-hidden">
-                    <ul id="slider" class="flex w-full">
+              <div id="slidercarousel" class="w-full overflow-hidden">
+                  <ul id="slids" class="flex w-full mr-4">
                       <li>
-                        <img src="img/Frame1.png" alt="" class="h-auto w-full">
+                          <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
                       </li>
                       <li>
-                        <img src="img/Frame24.png" alt="" class="h-auto w-full">
+                          <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
                       </li>
                       <li>
-                        <img src="img/Frame5.png" alt="" class="h-auto w-full">
+                          <img src="img/sd3.png" alt="" class="h-auto w-full mr-4">
                       </li>
                       <li>
-                        <img src="img/Frame7.png" alt="" class="h-auto w-full">
+                          <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
                       </li>
                       <li>
-                        <img src="img/Frame1.png" alt="" class="w-full">
-                      </li>
-                      <li>
-                        <img src="img/Frame24.png" alt="" class="h-50 w-full">
-                      </li>
-                      <li>
-                        <img src="img/Frame5.png" alt="" class="h-50 w-full">
-                      </li>
-                      <li>
-                        <img src="img/Frame7.png" alt="" class="h-50 w-full">
-                      </li>
-                    </ul>
-                </div>
+                        <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
+                    </li>
+                    <li>
+                        <img src="img/sd3.png" alt="" class="h-auto w-full">
+                    </li>
+                  </ul>
+              </div>
+          </div>
 
-                <div class="w-3/12 flex items-center">
-                    <div class="w-full">
-                      <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                        </svg>
-                        
-                      </button>
-                    </div>
-                  </div>
-            </div>
+          <div class="flex">
+            <div class="w-full text-center">
+              <button onclick="before()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                    </svg>                              
+              </button>
+
+              <button onclick="after()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>                              
+              </button>
+          </div>
+          </div>
         </div>
     </section>
     <!-- alumni section end -->
@@ -249,65 +296,56 @@
     <!-- kelebihan section end -->
 
     <!-- testimoni section start -->
-    <section id="#" class="pt-16">
+    <section id="#" class="pt-16 pb-[50px]">
       <div class="container">
         <div class="w-full px-4 mb-10">
           <div class="max-w-full mx-auto text-center">
-            <h3 class="font-semibold text-5xl text-primary mb-0 pt-16">SAAT BELAJAR DI RADIAN</h3>
+            <h3 class="font-semibold text-5xl text-sd mb-0 pt-16">SAAT BELAJAR DI RADIAN</h3>
             <p class="font-normal text-lg text-body mt-0 mb-8">Apa saja yang mereka rasakan ketika belajar dan ikut program di Radian?</p>
           </div>
         </div>
 
         <div class="flex">
-          <div class="w-3/12 flex items-center">
-              <div class="w-full text-right">
-                <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-                  </svg>                
-                </button>
-              </div>
-          </div>
-
           <div id="sliderContainer" class="w-full overflow-hidden">
-              <ul id="slider" class="flex w-full">
+            <ul id="slider" class="flex w-full mr-4">
                 <li>
-                  <img src="img/testi_smp1.png" alt="" class="h-auto w-full">
+                    <img src="img/testisd1.png" alt="" class="h-auto w-full mr-4">
                 </li>
                 <li>
-                  <img src="img/testi_smp2.png" alt="" class="h-auto w-full">
+                    <img src="img/testisd2.png" alt="" class="h-auto w-full mr-4">
                 </li>
                 <li>
-                  <img src="img/testi_smp3.png" alt="" class="h-auto w-full">
+                    <img src="img/testisd3.png" alt="" class="h-auto w-full mr-4">
                 </li>
                 <li>
-                  <img src="img/testi_smp1.png" alt="" class="h-auto w-full">
+                    <img src="img/testisd1.png" alt="" class="h-auto w-full mr-4">
                 </li>
                 <li>
-                  <img src="img/testi_smp2.png" alt="" class="w-full">
-                </li>
-                <li>
-                  <img src="img/testi_smp3.png" alt="" class="h-50 w-full">
-                </li>
-                <li>
-                  <img src="img/testi_smp1.png" alt="" class="h-50 w-full">
-                </li>
-                <li>
-                  <img src="img/testi_smp2.png" alt="" class="h-50 w-full">
-                </li>
-              </ul>
-          </div>
+                  <img src="img/testisd2.png" alt="" class="h-auto w-full mr-4">
+              </li>
+              <li>
+                  <img src="img/testisd3.png" alt="" class="h-auto w-full">
+              </li>
+            </ul>
+        </div>
+        </div>
 
-          <div class="w-3/12 flex items-center">
-              <div class="w-full">
-                <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                  </svg>
-                  
-                </button>
-              </div>
-            </div>
+        <div class="flex">
+          <div class="w-full text-center">
+            <button onclick="prev()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                  </svg>                              
+            </button>
+
+            <button onclick="next()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>                              
+            </button>
+        </div>
+        </div>
+
       </div>
       </div>
     </section>
@@ -468,7 +506,7 @@
     <!-- footer section end -->
 
     
-
+    <script src="JS/sd.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

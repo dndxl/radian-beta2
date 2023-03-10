@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "d:\\Radian\\radian-beta\\dist\\home.html"
+    "livePreview.defaultPreviewPath": "d:\\Radian\\radian-beta\\dist\\home.html",
+    "liveServer.settings.port": 5501
 }

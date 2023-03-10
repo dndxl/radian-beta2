@@ -13,12 +13,14 @@
         <style type="text/tailwindcss"></style> 
     </head>
     <body class="font-poppins">
+
+
         <!-- hero section start -->
         <section id="#" class="pt-16 w-full h-full" style="background-size:  cover; background-image: url(img/bg-smp.png);">
         <div class="container">
             <div class="flex flex-wrap">
                 <div class="w-full self-center px-4 lg:w-1/2">
-                    <div class="bg-second rounded-t-3xl rounded-bl-3xl shadow-lg mb-6 pl-11 px-6 py-2">
+                    <div class="bg-second rounded-t-3xl rounded-bl-3xl shadow-lg mb-6 w-[282px] h-[46px] px-6 py-2">
                         <h3 class="text-xl font-semibold text-sma">PROGRAM PTS  & PAS </h3>
                     </div>
                     <h1 class="font-bold text-white text-5xl mt-4">AYO PERSIAPKAN UJIANMU DENGAN GURU YANG ASIK</h1>
@@ -38,68 +40,58 @@
         <!-- hero section end -->
 
         <!-- alumni section start -->
-        <section id="#" class="pt-16 bg-slate-100">
-            <div class="container">
-                <div class="w-full px-4 mb-10">
-                    <div class="max-w-xl mx-auto text-center">
-                        <h3 class="font-semibold text-5xl text-primary mb-0 pt-16">ALUMNI RADIAN</h3>
-                        <p class="font-normal text-lg text-black mt-0 mb-8">Beberapa generasi Radian yang berhasil lolos PTN</p>
-                    </div>
-                </div>
-
-                <div class="flex">
-                    <div class="w-3/12 flex items-center">
-                        <div class="w-full text-right">
-                          <button onclick="prev()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg mr-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 12h-15m0 0l6.75 6.75M4.5 12l6.75-6.75" />
-                            </svg>                
-                          </button>
-                        </div>
-                    </div>
-
-                    <div id="sliderContainer" class="w-full overflow-hidden">
-                        <ul id="slider" class="flex w-full">
-                          <li>
-                            <img src="img/Frame1.png" alt="" class="h-auto w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame24.png" alt="" class="h-auto w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame5.png" alt="" class="h-auto w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame7.png" alt="" class="h-auto w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame1.png" alt="" class="w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame24.png" alt="" class="h-50 w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame5.png" alt="" class="h-50 w-full">
-                          </li>
-                          <li>
-                            <img src="img/Frame7.png" alt="" class="h-50 w-full">
-                          </li>
-                        </ul>
-                    </div>
-
-                    <div class="w-3/12 flex items-center">
-                        <div class="w-full">
-                          <button onclick="next()" class="p-3 rounded-full bg-white border border-gray-100 shadow-lg ml-5">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
-                            </svg>
-                            
-                          </button>
-                        </div>
-                      </div>
+        <section id="#" class="pt-16 bg-slate-100 pb-[50px]">
+          <div class="container">
+              <div class="w-full px-4 mb-10">
+                  <div class="max-w-xl mx-auto text-center">
+                      <h3 class="font-semibold text-5xl text-sd mb-0 pt-16">ALUMNI RADIAN</h3>
+                      <p class="font-normal text-lg text-black mt-0 mb-8">Beberapa generasi Radian yang berhasil lolos PTN</p>
+                  </div>
+              </div>
+  
+              <div class="flex">
+  
+                <div id="slidercarousel" class="w-full overflow-hidden">
+                    <ul id="slids" class="flex w-full mr-4">
+                        <li>
+                            <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
+                        </li>
+                        <li>
+                            <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
+                        </li>
+                        <li>
+                            <img src="img/sd3.png" alt="" class="h-auto w-full mr-4">
+                        </li>
+                        <li>
+                            <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
+                        </li>
+                        <li>
+                          <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
+                      </li>
+                      <li>
+                          <img src="img/sd3.png" alt="" class="h-auto w-full">
+                      </li>
+                    </ul>
                 </div>
             </div>
-        </section>
+  
+            <div class="flex">
+              <div class="w-full text-center">
+                <button onclick="before()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
+                      </svg>                              
+                </button>
+  
+                <button onclick="after()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                      </svg>                              
+                </button>
+            </div>
+            </div>
+          </div>
+      </section>
         <!-- alumni section end  -->
 
         <!-- keunggulan section start -->
@@ -469,7 +461,7 @@
         </footer>
         <!-- footer section end  -->
 
-
+        <script src="JS/smp.js"></script>
         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     </body>
