@@ -36,6 +36,7 @@ module.exports = {
         txtdokter: '#1C244B',
         bdydokter: '#324A6D',
         camp : '#068292',
+        ctaarea: '#E4E9F9',
       },
 
       screens: {
