@@ -108,22 +108,22 @@
 
               <div id="slidercarousel" class="w-full overflow-hidden">
                   <ul id="slids" class="flex w-full mr-4">
-                      <li>
+                      <li class="mr-3">
                           <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
                       </li>
-                      <li>
+                      <li class="mr-3">
                           <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
                       </li>
-                      <li>
+                      <li class="mr-3">
                           <img src="img/sd3.png" alt="" class="h-auto w-full mr-4">
                       </li>
-                      <li>
+                      <li class="mr-3">
                           <img src="img/sd1.png" alt="" class="h-auto w-full mr-4">
                       </li>
-                      <li>
+                      <li class="mr-3">
                         <img src="img/sd2.png" alt="" class="h-auto w-full mr-4">
                     </li>
-                    <li>
+                    <li class="mr-3">
                         <img src="img/sd3.png" alt="" class="h-auto w-full">
                     </li>
                   </ul>
@@ -132,13 +132,13 @@
 
           <div class="flex">
             <div class="w-full text-center">
-              <button onclick="before()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+              <button onclick="after()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                     </svg>                              
               </button>
 
-              <button onclick="after()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
+              <button onclick="before()" class="p-3 rounded-full bg-slate-100 border border-gray-100 shadow-lg mr-5">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 text-sd">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                     </svg>                              
@@ -308,19 +308,19 @@
         <div class="flex">
           <div id="sliderContainer" class="w-full overflow-hidden">
             <ul id="slider" class="flex w-full mr-4">
-                <li>
+                <li class="mr-3">
                     <img src="img/testisd1.png" alt="" class="h-auto w-full mr-4">
                 </li>
-                <li>
+                <li class="mr-3">
                     <img src="img/testisd2.png" alt="" class="h-auto w-full mr-4">
                 </li>
-                <li>
+                <li class="mr-3">
                     <img src="img/testisd3.png" alt="" class="h-auto w-full mr-4">
                 </li>
-                <li>
+                <li class="mr-3">
                     <img src="img/testisd1.png" alt="" class="h-auto w-full mr-4">
                 </li>
-                <li>
+                <li class="mr-3">
                   <img src="img/testisd2.png" alt="" class="h-auto w-full mr-4">
               </li>
               <li>
@@ -415,23 +415,26 @@
     <!-- program section end  -->
 
     <!-- daftar section start -->
-    <section id="#" class="pt-16 pb-12">
+    <section id="teacher" class="pb-20 pt-16">
       <div class="container">
-        <div class="px-20 overflow-hidden bg-gradient-to-r from-orange to-second rounded-lg">
-          <div class="grid items-center grid-cols-1 gap-y-2 lg:grid-cols-2">
-            <div class="pl-20 max-w-3xl">
-              <h2 class="text-5xl font-bold text-white mt-12 mb-2">SEGERA DAFTAR!</h2>
-              <p class="text-lg font-medium text-white mb-9">Tunggu Apalagi segera dapatkan Diskon Up To 30% sampai tanggal 15 September 2022</p>
-              <a href="#" class="text-sm font-bold text-white bg-sma py-3 px-8 mr-4 rounded-lg">Daftar Segera</a>
-              <a href="#" class="text-sm font-bold text-white border border-white py-3 px-8 rounded-lg">Konsultasi</a>
-            </div>
-            <div class="ml-60 relative p-0">
-              <img class="relative w-80 h-80" src="img/daftar.png" alt="">
-            </div>
+          <div class="pl-4 mx-auto bg-gradient-to-r from-orange to-second lg:w-[1227px] lg:h-[306px] h-[700px] rounded-3xl sm:pl-6 lg:pl-8 relative">
+              <div class="2xl:pl-24">
+                  <div class="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
+                      <div class="lg:order-1 order-2">
+                        <h2 class="text-5xl font-bold text-white lg:mt-12 mt-2 mb-2">SEGERA DAFTAR!</h2>
+                        <p class="text-lg font-medium text-white mb-9">Tunggu Apalagi segera dapatkan Diskon Up To 30% sampai tanggal 15 September 2022</p>
+                        <a href="#" class="text-sm font-bold text-white bg-sma py-3 px-8 mr-4 rounded-lg">Daftar Segera</a>
+                        <a href="#" class="text-sm font-bold text-white border border-white py-3 px-8 rounded-lg">Konsultasi</a>
+                      </div>
+      
+                      <div class="lg:absolute relative right-0 -top-10 lg:order-2 order-1">
+                          <img class="w-[338px] h-[334px] right-0 text-right" src="img/daftar.png" alt="">
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
     <!-- daftar section end -->
 
     <!-- footer section start -->
